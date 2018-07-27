@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 24, 2018, 11:37:41 AM
+    Author     : sphinx
+*/
+
+.myphoto-section{
+    min-height:500px;
+}
+
+.bg-myphoto-dark{
+    color: white ;
+    background-color: #504747;    
+}
+
+.bg-myphoto-light{
+    color: #504747 ;
+    background-color: white;
+}
+
+.jumbotron-welcome{
+    background-image: url("pics/book.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.bg-myphoto-welcome{
+    background-image:url("pics/book.jpg");
+    background-size:cover;
+    color: #504747;
+}
+
+*{
+   font-family:ubuntu;
+}
+
+#welcome{
+   background-color:red;
+}

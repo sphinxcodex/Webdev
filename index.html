@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/fontawesome/css/all.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <script src="js/bootstrap.min.js"></script>
+         <script src="js/jquery.min.js"></script>     
+        <script src="js/popper.js"></script>
+        <script src="script.js"></script>
+        <script src="js/bootstrap.bundle.min.js" ></script>
+        <title> Webdevkit </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <!--navigation bar section-->
+        
+        <!--start of navbar-->
+        <nav class="navbar navbar-expand-md navbar-expand-lg  navbar-light">
+            <a href="#" class="navbar-brand"> <span class="fa fa-images"></span> MyPhoto</a>
+           
+            
+            <button class="navbar-toggler hidden-sm-up pull-xs-right" data-toggle="collapse" data-target="#navigation">
+                <span class="fa fa-list"></span>
+            </button>
+            
+           <div id="navigation" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav">
+                 <li class="nav-item">
+                     <a href="#" class="nav-link"><span class="fa fa-home"></span> Home</a>
+                 </li>
+                
+                 <li class="nav-item">
+                     <a href="#welcome" class="nav-link">  <span class="fa fa-university"></span> Welcome</a>    
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#services" class="nav-link"> <span class="fa fa-truck"></span> Services</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link"> <span class="fa fa-film"></span> Gallery</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"> <span class="fa fa-info-circle"></span> About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"> <span class="fa fa-phone-square"></span> Contact us</a>
+                </li>
+                
+                <li class="nav-item dropdown pull-xs-right">
+                    <a href="#" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Profile<span class="caret"></span></a>
+                    
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Profile</a> 
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Logout</a>  
+                    </div>           
+                </li>
+                
+            </ul> 
+           </div>
+        </nav>
+        <!--end of navbar-->
+        
+        
+        <!--welcome section-->
+        <div id="welcome" class="container-fluid bg-myphoto-welcome myphoto-section">
+            <div class="container">
+                <div class="jumbotron animated headShake infinite">
+                    <h1 class="animated infinite bounce delay-1s" >Welcome to Sphinx's photos</h1>
+                    <p>photographs you can definitely cherish!</p>
+                </div>
+            </div>
+        </div>
+          
+        <!--services section-->
+        <div id="services" class="container-fluid bg-myphoto-dark myphoto-section">
+            
+             <h3 class="animated infinite shake delay-1s slower">services</h3>
+             
+            <div class="row">
+                
+                <!--start of tab-->
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a href="#services-events" class="nav-link active" data-toggle="tab">Events</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#services-personal"  class="nav-link"  data-toggle="tab" >Personal</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#services-prints" class="nav-link"  data-toggle="tab">Prints</a>
+                    </li>
+                </ul>
+            </div>
+                
+             <div class="row">
+               <div class="container-fluid">
+                <div class="tab-content bg-myphoto-light">
+                    <div role="tabpanel" class="tab-pane active" id="services-events">
+                        <div class="container">
+                            <div class="row">
+                                <p>lorem ipsum, what does it mean</p>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane" id="services-personal">
+                        <div class="container">
+                            <div class="row">
+                                <p>second pane</p>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane" id="services-prints">
+                        <div class="container">
+                            <div class="row">
+                                <p>third pane</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+             <!--end of tab-->
+        </div>
+        
+        
+        <!--gallery section-->
+        <div id="gallery" class="container-fluid bg-myphoto-light myphoto-section">
+            <h3 class="animated infinite shake delay-1s slower">gallery</h3>
+            
+            <div class="container-fluid"> 
+              <div class="row">
+                
+                  <div class="col-md-6">
+                <!--start of carousel-->
+                <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--first picture-->
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="pics/5.jpg" alt="first image">
+                            <div class="hidden-sm carousel-caption">
+                                first image
+                            </div>
+                        </div>
+
+                        <!--second picture-->
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="pics/5.jpg" alt="second image">
+
+                            <div class="carousel-caption">
+                                second image
+                            </div>
+
+                        </div>
+
+                        <!--third picture-->
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="pics/5.jpg" alt="third image">
+                            <div class="carousel-caption">
+                               created this shit myself in blender
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">
+                        <span class="fa fa-backward" aria-hidden="true"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">
+                        <span class="fa fa-forward" aria-hidden="true"></span>
+                    </a>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#gallery-carousel" data-slide-to="1"></li>
+                        <li data-target="#gallery-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                </div>
+                <!--end of <carousel-->
+                  </div>
+                  
+                  <!--second carousel-->
+                  <div class="col-md-6">
+                      <!--start of second carousel-->
+                      <div id="gallery-carousel-1" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+                          <div class="carousel-inner" role="listbox">
+
+                              <!--first picture-->
+                              <div class="carousel-item active">
+                                  <img class="img-fluid" src="pics/5.jpg" alt="first image">
+                                  <div class="carousel-caption">
+                                      first image
+                                  </div>
+                              </div>
+
+                              <!--second picture-->
+                              <div class="carousel-item">
+                                  <img class="img-fluid"  src="pics/5.jpg" alt="second image">
+
+                                  <div class="carousel-caption">
+                                      second image
+                                  </div>
+
+                              </div>
+
+                              <!--third picture-->
+                              <div class="carousel-item">
+                                  <img class="img-fluid" src="pics/5.jpg" alt="third image">
+                                  <div class="carousel-caption">
+                                      third image
+                                  </div>
+                              </div>
+                          </div>
+
+                          <a class="carousel-control-prev" href="#gallery-carousel-1" role="button" data-slide="prev">
+                              <span class="fa fa-backward" aria-hidden="true"></span>
+                          </a>
+
+                          <a class="carousel-control-next" href="#gallery-carousel-1" role="button" data-slide="next">
+                              <span class="fa fa-forward" aria-hidden="true"></span>
+                          </a>
+
+                          <ol class="carousel-indicators">
+                              <li data-target="#gallery-carousel-1" data-slide-to="0" class="active"></li>
+                              <li data-target="#gallery-carousel-1" data-slide-to="1"></li>
+                              <li data-target="#gallery-carousel-1" data-slide-to="2"></li>
+                          </ol>
+
+                      </div>
+                      <!--end of second carousel-->
+                  </div>
+                  
+            </div>
+           </div>      
+        </div>
+        
+        <!--about section-->
+        <div id="about" class="container-fluid bg-myphoto-dark">
+            <div class="row">
+                <h3 class="animated infinite shake delay-1s slower">about</h3>
+                <div style="margin-bottom: 20px" class="card bg-myphoto-light">
+                    <div class="card-block">
+                        <p>
+                           The style of photography will be customised to your personal preference,
+                           as if being shot from your own eyes. You will be part of every step of the
+                           photography process,to ensure these photos feel like your own   
+                        </p>
+                        
+                        <p>
+                        Our excellent photographers have many years of experience, capturing moments 
+                        from weddings to sporting events of absolute quality.    
+                        </p>
+                        
+                        <p>
+                            MyPhoto also provides superb printing options of all 
+                            shapes and sizes, on any canvas, in any form. From 
+                            large canvas prints to personalised photo albums,
+                            MyPhoto provides it all.
+                        </p>
+                        
+                        <p>MyPhoto provides a full, holistic solution for all your photography needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--contact us section-->
+        <div id="contact" class="container-fluid bg-myphoto-light myphoto-section">
+            <div class="row">
+                <h3>contact us</h3>
+            </div>
+        </div>
+        
+        
+        <!--footer section-->
+        <footer>footer placeholder</footer>
+ 
+        
+    </body>
+    
+</html>
