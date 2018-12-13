@@ -1,2 +1,2 @@
-# Webdev-kit
+# Webdev
 front end web development using bootstrap
